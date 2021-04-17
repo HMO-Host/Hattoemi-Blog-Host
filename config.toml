@@ -1,0 +1,77 @@
+baseURL = "https://hatto.xyz"
+title = "洛诗旅 - hatto.xyz"
+paginate = 5
+theme = "hugo-PaperMod"
+DefaultContentLanguage = "zh"
+enableRobotsTXT = true
+buildDrafts = true
+buildFuture = false
+buildExpired = false
+
+[minify]
+disableXML = true
+minifyOutput = true
+
+[taxonomies]
+tag = "tags"
+
+[params]
+ShowToc = true
+TocOpen = true
+env = "production"
+title = "洛诗旅 - a7b8i06c49.ml"
+description = "准备创造神话的高中生，运维与软件开发，甚至游戏"
+author = "洛诗旅"
+images = "<link or path of image for opengraph, twitter-cards>"
+ShowReadingTime = true
+ShowShareButtons = false
+comments = true
+defaultTheme = "auto"
+disableThemeToggle = false
+disableSpecial1stPost = false
+
+  [params.assets]
+  favicon = "https://natsuka-cos-1302639736.file.myqcloud.com/hattoemi/Hattoemi.webp"
+  favicon16x16 = "https://natsuka-cos-1302639736.file.myqcloud.com/hattoemi/Hattoemi-16.webp"
+  favicon32x32 = "https://natsuka-cos-1302639736.file.myqcloud.com/hattoemi/Hattoemi-32.webp"
+  apple_touch_icon = ""
+  safari_pinned_tab = ""
+
+  [params.label]
+  text = "> $ cd /home/ "
+  iconHeight = 35
+
+  [params.profileMode]
+  enabled = true
+  title = "洛诗旅"
+  imageUrl = "https://natsuka-cos-1302639736.file.myqcloud.com/Hattoemi-Avatar.webp"
+
+    [[params.profileMode.buttons]]
+    name = "文章"
+    url = "posts"
+
+    [[params.profileMode.buttons]]
+    name = "标签"
+    url = "tags"
+
+  [params.homeInfoParams]
+  Title = "你好，这里是洛诗旅"
+  Content = "继承史诗，创造神话"
+
+  [[params.socialIcons]]
+  name = "github"
+  url = "https://github.com/a7b8i06c49"
+
+  [[params.socialIcons]]
+  name = "email"
+  url = "mailto:a7b8i06c49@outlook.com"
+
+[[menu.main]]
+name = "文章"
+url = "posts/"
+weight = 5
+
+[[menu.main]]
+name = "标签"
+url = "tags/"
+weight = 10

@@ -1,0 +1,18 @@
+{
+  "name": "luoshilv-blog-host",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "./SSG/hugo -D --gc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hikari-Mind-One/Hattoemi-Blog.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hikari-Mind-One/Hattoemi-Blog/issues"
+  },
+  "homepage": "https://github.com/Hikari-Mind-One/Hattoemi-Blog#readme"
+}

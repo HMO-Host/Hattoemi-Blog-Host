@@ -1,0 +1,125 @@
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: calc(var(--nav-width) + var(--gap) * 0.6);
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    line-height: var(--header-height)
+}
+
+.nav a {
+    display: block
+}
+
+.logo,
+.menu,
+.logo__cursor {
+    display: flex;
+    margin: auto var(--gap);
+}
+
+.logo-switches {
+    display: flex;
+    margin-top: 0.15em;
+}
+
+.logo {
+    flex-wrap: inherit
+}
+
+.logo a {
+    font-size: 20px;
+    font-weight: 700;
+    margin-inline-end: 10px
+}
+
+.logo a img {
+    display: inline;
+    vertical-align: middle;
+    pointer-events: none;
+    transform: translate(0, -10%);
+    border-radius: 6px;
+    margin-inline-end: 8px
+}
+
+.theme-toggle svg {
+    height: 18px;
+    user-select: none;
+    cursor: pointer
+}
+
+body.dark #moon {
+    vertical-align: middle;
+    display: none
+}
+
+body:not(.dark) #sun {
+    display: none
+}
+
+.menu {
+    list-style: none;
+    word-break: keep-all;
+    overflow-x: auto;
+    white-space: nowrap
+}
+
+.menu li+li {
+    margin-inline-start: var(--gap)
+}
+
+.menu a {
+    font-size: 16px
+}
+
+.menu .active {
+    font-weight: 500;
+    border-bottom: 2px solid currentColor
+}
+
+.lang-switch li,
+.lang-switch ul,
+.logo-switches {
+    display: inline-flex
+}
+
+.lang-switch a {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0 8px
+}
+
+.logo-switches {
+    flex-wrap: inherit
+}
+
+.logo__cursor {
+	display: inline-block;
+	width: 10px;
+	height: 1rem;
+	background: #fe5186;
+	margin-left: 5px;
+	border-radius: 1px;
+	animation: cursor 1s infinite
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.logo__cursor {
+		animation: none
+	}
+}
+
+@keyframes cursor {
+	0% {
+		opacity: 0
+	}
+
+	50% {
+		opacity: 1
+	}
+
+	100% {
+		opacity: 0
+	}
+}
